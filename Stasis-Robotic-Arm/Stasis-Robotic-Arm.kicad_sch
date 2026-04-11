@@ -7074,6 +7074,16 @@
 		)
 		(uuid "495808b1-b032-4aec-89d3-be6abf03dc3c")
 	)
+	(text "ESP32\n"
+		(exclude_from_sim no)
+		(at 17.272 169.672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "53b08d0a-bf7d-4fb9-9726-de7ae957fd6e")
+	)
 	(text "SERVO\n"
 		(exclude_from_sim yes)
 		(at 120.396 111.252 0)
