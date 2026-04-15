@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 0.762,
+          "width": 0.254
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -658,7 +658,7 @@
         "uuid": "bd98b05c-591f-47fc-a443-8b8acc1115f0"
       }
     ],
-    "used_designators": "C40",
+    "used_designators": "C40-45,#PWR10,#PWR33-36,R27-28,J9,U11",
     "variants": []
   },
   "sheets": [
