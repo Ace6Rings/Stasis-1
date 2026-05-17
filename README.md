@@ -12,7 +12,28 @@ very light and small items. Thats why I built this robotic arm. I can lift items
 The most important thing is that I became way better at eda since this is my first project that uses a smd PCB.
 
 # Schematic
+<img width="1082" height="624" alt="schematic 2" src="https://github.com/user-attachments/assets/3fca7e48-12bf-4a3e-8217-b0f137b467fb" />
+<img width="1459" height="841" alt="scematic1" src="https://github.com/user-attachments/assets/473986a7-882b-485c-b744-1604b7c948b0" />
+There are 5 tmc 2209 motor drivers. They are almost identical. Only their gpio assignments to dir and step changes and also their uart configuration.
 
+# PCB
+<img width="1098" height="803" alt="pcb" src="https://github.com/user-attachments/assets/0e9a171d-74e7-4a03-845d-950562f76a62" />
+The PCB features an esp32, 5 tmc 2209 motor drivers, 1 servo motor screw connector.
+This is done on a 2 layer board for the maxmimum speed of building and cost efficiency.
+# Model
+The purpose of the model is not to make it look good but to make it as light as possible to test in real life. 
+It features 6 degrees of freedom, which could move (almost) ny item in any way you could think of.
+<img width="1616" height="791" alt="model2" src="https://github.com/user-attachments/assets/5baa0a8e-6e98-479f-94c3-4647e9544fd1" />
+<img width="1614" height="783" alt="model1" src="https://github.com/user-attachments/assets/bed8afed-dd94-4264-a4e6-8dd0c09be38b" />
+The base has an hexagonal pattern which maximizes strength, aesthetics, and filament efficiency.
+
+# Testing
+
+N/A (will include after getting parts)
+
+
+
+# Bill of Materials
 
 | Name                          | Purpose                            | Quantity | Total Cost (USD) | Link                                                                                                                                                                                         | Distributor |
 |-------------------------------|------------------------------------|----------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
