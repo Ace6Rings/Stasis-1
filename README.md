@@ -1,12 +1,19 @@
-This is a robotic arm designed for situations that require high torque and longer range compared to typical hobbyist robotic arms. 
+# OVERVIEW
 
-I made this project because I wanted to learn more about pcb making and also improve my cad skills. I want to give this to my little brother as something that is cool for him to play with 
-and also make him more interested in the stem world. 
-<img width="274" height="192" alt="Screenshot 2026-04-28 214203" src="https://github.com/user-attachments/assets/38e50cc8-a8f2-4aa6-b5a7-8bc7a5e1a1af" />
+The Reshular Robot Arm is a 6 DOF robotic arm. It is operated over bluetooth so it can be operated remotely.
+5 stepper motors, using the TMC2209 driver, and 1 servo motor is used to make this huge robotic arm.
 
-[tableConvert.com_db4kab.md](https://github.com/user-attachments/files/27186461/tableConvert.com_db4kab.md)
-[Uploading Robot-arm-bom.csv…]()
-<img width="883" height="553" alt="Screenshot 2026-04-28 214329" src="https://github.com/user-attachments/assets/44a7e327-72df-40e5-bfaa-8cf0d1b69b10" />
+# Purpose
+
+I made this because I've always been fascinated on how to use technology to make an impact on the physical world. 
+I've seen small robotic arms powered with servo motors. But I noticed that scaling it up in size changes the materials I need 
+and introduces (newish) problems like insufficient torque when using a servo motor. These robotic arms are also shorter ranged and can only hold
+very light and small items. Thats why I built this robotic arm. I can lift items that are impossible for small robotic arms like a big book. 
+The most important thing is that I became way better at eda since this is my first project that uses a smd PCB.
+
+# Schematic
+
+
 | Name                          | Purpose                            | Quantity | Total Cost (USD) | Link                                                                                                                                                                                         | Distributor |
 |-------------------------------|------------------------------------|----------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | li ion batteries              | batteries to power my robot arm    | 1        | 25.98            | https://www.amazon.com/Mupoer-Rechargeable-Batteries-Integrated-Charging/dp/B0D4M581B3/ref=sr_1_15?sr=8-15                                                                                   | amazon      |
