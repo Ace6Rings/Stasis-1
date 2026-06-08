@@ -1,3 +1,6 @@
+<img width="985" height="680" alt="image" src="https://github.com/user-attachments/assets/af6f1255-7c98-461b-8fc7-66bc2438ef5b" />
+
+
 # OVERVIEW
 
 The Reshular Robot Arm is a 6 DOF robotic arm. It is operated over bluetooth so it can be operated remotely.
