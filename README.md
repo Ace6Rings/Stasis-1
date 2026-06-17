@@ -37,6 +37,18 @@ It features 6 degrees of freedom, which could move (almost) ny item in any way y
 <img width="1616" height="791" alt="model2" src="https://github.com/user-attachments/assets/5baa0a8e-6e98-479f-94c3-4647e9544fd1" />
 <img width="1614" height="783" alt="model1" src="https://github.com/user-attachments/assets/bed8afed-dd94-4264-a4e6-8dd0c09be38b" />
 The base has an hexagonal pattern which maximizes strength, aesthetics, and filament efficiency.
+# Motor joints
+
+Well, how does each joint work? Its actually quite simple. You can tell by the picture that the stepper motors are directly attached to each joint, so no special pullys or anything! This saves complexity and cost. For the gripper, its a little different.<img width="751" height="809" alt="Screenshot 2026-06-17 005238" src="https://github.com/user-attachments/assets/27876506-66ba-4a6d-8f4b-2be61d53708b" />
+
+The central gear meshes with the two side parts. When it spins, the two grippers come together and, well, grips. Spinning it the opposite way retracts it. You can try it out in this link.
+https://cad.onshape.com/documents/dfb7d85a38278a669fcebbb5/w/2d92252d034fc83197e6695c/e/ec9dc79179103d4b89a939a4?renderMode=0&uiState=6a322868ee269b265a1ceec7
+
+
+
+<img width="781" height="561" alt="Screenshot 2026-06-17 005509" src="https://github.com/user-attachments/assets/274f1152-d595-4010-8078-3a5a5432b1d6" />
+
+As you can see, the motor is directly attached.
 
 # Testing
 
