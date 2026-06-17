@@ -19,10 +19,18 @@ The most important thing is that I became way better at eda since this is my fir
 <img width="1459" height="841" alt="scematic1" src="https://github.com/user-attachments/assets/473986a7-882b-485c-b744-1604b7c948b0" />
 There are 5 tmc 2209 motor drivers. They are almost identical. Only their gpio assignments to dir and step changes and also their uart configuration.
 
+So how did I configure it and how can you too?
+
+The tmc2209 talks to the esp32 via UART. But four tmc 2209s share one uart line. Wait, there's 5 tmcs, not 4! How could that be?
+Well, the ID for uart is dictated by the whether your ms1 and ms2 are pulled high or low. Since there are 2 states and 2 pins, 2^2 is 4. So you get 4 combinations.
+To account for the 5th tmc 2209, I just used another set of gpios.
+
+The ms1 and ms2 pins also happen to control microstepping, and thats pretty important if you have something like an EV or a robot arm like this. So I put the finer microstepping onto parts that actually matter, such as the elbow joint. You can find further details via the datasheet for the TMC2209 and the exact configuration in the PCB file that I have.
 # PCB
 <img width="1098" height="803" alt="pcb" src="https://github.com/user-attachments/assets/0e9a171d-74e7-4a03-845d-950562f76a62" />
-The PCB features an esp32, 5 tmc 2209 motor drivers, 1 servo motor screw connector.
-This is done on a 2 layer board for the maxmimum speed of building and cost efficiency.
+
+Now lets get into the PCB.
+The specs of the PCB isn't anything special. It is a 2 layer pcb, and thats exactly why this is good. It's theoretically not gonna perform as well as a four layer board (well not really because this is a 2 layer board thing). But since its only 2 layers, the cost decreases significantly. There are two layers of electrical protection. The first one is the NCP1117 (well not really? but if it dies the circuit becomes open so I guess it is protection), and the second one is the TVS diode. The TVS diode is a component that protects your circuit when the voltage/current reaches a certain threshold. For something like a robot arm, you will defininately one that.
 # Model
 The purpose of the model is not to make it look good but to make it as light as possible to test in real life. 
 It features 6 degrees of freedom, which could move (almost) ny item in any way you could think of.
